@@ -1,0 +1,73 @@
+{
+  "throughput_n1000": {
+    "stream_size": 1000,
+    "window_rows": 500,
+    "agg_groups": 15,
+    "time_s": 6.852,
+    "throughput_tuples_per_s": 72.97
+  },
+  "throughput_n5000": {
+    "stream_size": 5000,
+    "window_rows": 500,
+    "agg_groups": 15,
+    "time_s": 0.6827,
+    "throughput_tuples_per_s": 732.39
+  },
+  "throughput_n10000": {
+    "stream_size": 10000,
+    "window_rows": 500,
+    "agg_groups": 15,
+    "time_s": 0.5397,
+    "throughput_tuples_per_s": 926.44
+  },
+  "throughput_n20000": {
+    "stream_size": 20000,
+    "window_rows": 500,
+    "agg_groups": 15,
+    "time_s": 0.6204,
+    "throughput_tuples_per_s": 805.93
+  },
+  "olap_ops": {
+    "materialization_time_s": 3.0909,
+    "rollup": {
+      "mat_s": 1.2303,
+      "non_mat_s": 0.6192,
+      "speedup": 0.5
+    },
+    "drilldown": {
+      "mat_s": 0.943,
+      "non_mat_s": 0.5048
+    },
+    "slice": {
+      "mat_s": 0.9078,
+      "non_mat_s": 0.3817,
+      "speedup": 0.42
+    }
+  },
+  "c_window": [
+    {
+      "c_window_s": 30,
+      "groups": 10,
+      "time_s": 0.9682,
+      "throughput": 10.33
+    },
+    {
+      "c_window_s": 60,
+      "groups": 13,
+      "time_s": 0.7194,
+      "throughput": 18.07
+    },
+    {
+      "c_window_s": 90,
+      "groups": 14,
+      "time_s": 0.7012,
+      "throughput": 19.97
+    },
+    {
+      "c_window_s": 120,
+      "groups": 15,
+      "time_s": 0.7394,
+      "throughput": 20.29
+    }
+  ]
+}
